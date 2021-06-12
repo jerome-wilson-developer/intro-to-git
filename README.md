@@ -36,4 +36,15 @@ git commit -m "message ... starts with a present tense verb" = This git command 
 Example: cd intro-to-git  >>>  touch remove-file.txt  >>>   ls (shows all files inside this folder)  >>>  git status [(shows any files that are NOT currently being tracked)  >>>  $ git status (On branch master  Untracked files: (use "git add <file>..." to include in what will be committed) remove-file.txt nothing added to commit but untracked files present (use "git add" to track)]  >>>  git add remove-file.txt >>>  $ git status [On branch master. Changes to be committed: (use "git restore --staged <file>..." to unstage) new file: remove-file.txt  >>>  git add remove-file-2  >>>  git status  >>>  git commit -m "added file remove-file-2"  >>>  git status  >>>  
 
 # .gitignore
-Hidden files are created with the git command: touch .gitignore ... show hidden files in the to left menu ... you can also add and save files to the .gitignore file in the top-left-menu. 
+Hidden files are created with the git command: touch .gitignore ... show hidden files in the to left menu ... you can also add and save files to the .gitignore file in the top-left-menu ... to rename files use the "mv (move)" git command. $ mv remove-file-4 remove-file-3 ... git add -A (add all untracked files to the staging leve)
+
+# Create and Upload Your Repositories
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/jerome-wilson-developer/intro-to-git.git
+git branch -M main
+git push -u origin main
+
+
+
+
